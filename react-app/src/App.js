@@ -4,8 +4,10 @@ import PokemonList from './components/PokemonList';
 import './App.css';
 
 function App() {
+  const basename = process.env.PUBLIC_URL || '/';
+
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={basename}>
       <div className="app-shell">
         <header className="app-header">
           <div>
